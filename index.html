@@ -1,31 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="/assets/style/main.css">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <div class="logo">
-        <a href="index.html"><img src="assets/icons/logo-website.webp" > </a>
-        <a href="index.html">Nexcent</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexcent</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/assets/style/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"><img src="assets/icons/logo-website.webp" /> </a>
+          <a href="index.html">Nexcent</a>
+        </div>
+        <nav>
+          <input type="checkbox" id="check">
+          <label for = "check">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-xmark"></i>
+        </label>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#faeture">Faeture</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#testimonial">Testimonial</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a class="login" href="#login">Login</a></li>
+            <li><a class="sing-up" href="#sing up">Sing up</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a>
-          <li><a href="#service">Service</a>
-          <li><a href="#faeture">Faeture</a>
-          <li><a href="#product">Product</a>
-          <li><a href="#testimonial">Testimonial</a>
-          <li><a href="#faq">FAQ</a>
-          <li><a class="login" href="#login">Login</a>
-          <li><a class="sing-up" href="#sing up">Sing up</a>
-        </ul>
-      </nav>
-    </div>
-  </header>
-</body>
+    </header>
+    <main>
+    <section class="home" id="home">
+      <div class="dek">
+      <h1>Lessons and insights<br>
+        <span>from 8 years</span>
+      </h1>
+      <p>Where to grow your business as a photographer: site or social media?</p>
+      </div>
+      <img src="assets/images/design-1.webp">
+    </section>
+    <section class="service" id="service">
+      <div class="our-clients">
+        <h2>
+          Our Clients</h2>
+          <P>We have been working with some Fortune 500+ clients</P>
+          <div class="icon">
+          <a href="#"> <img src="assets/icons/logo-10.webp"> </a>
+          <a href="#"> <img src="assets/icons/logo-9.webp"> </a>
+          <a href="#"> <img src="assets/icons/logo-1.webp"> </a>
+          <a href="#"> <img src="assets/icons/logo-7.webp"> </a>
+          <a href="#"> <img src="assets/icons/logo-6.webp"> </a>
+          <a href="#"> <img src="assets/icons/logo-5.webp"> </a>
+          <a href="#"> <img src="assets/icons/logo-4.webp"> </a>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="faeture" id="faeture">
+      <div class="our-clients">
+        <h2>Manage your entire community<br>
+          in a single system</h2>
+          <p></p>
+      </div>
+    </section> -->
+</main>
+  </body>
 </html>

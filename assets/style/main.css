@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 :root {
   --main-color: #4caf4f;
@@ -15,8 +16,11 @@
   --h2-size: 36px;
   --section-padding: 40px;
 }
+html {
+  scroll-behavior: smooth;
+}
 .container {
-  padding: 0 15px;
+  padding: 40px 15px;
   margin: auto;
 }
 @media (min-width: 768px) {
@@ -34,3 +38,145 @@
     width: 1170px;
   }
 }
+.container {
+  display: flex;
+  justify-content: space-between;
+
+}
+header {
+  position:sticky;
+  top: 0;
+  height: 90px;
+  background-color: #ebe3e3;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo a {
+  font-size: 25px;
+  color: var(--bg);
+}
+nav ,ul {
+  display: flex;
+  gap: 70px;
+  margin-right: -50px;
+}
+a {
+  text-decoration: none;
+  color: var(--bg);
+  font-size: 20px;
+}
+li {
+  list-style: none;
+}
+.login {
+  color: var(--main-color);
+  font-size: 20px;
+}
+.sing-up {
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 20px;
+  color: var(--bg-alt);
+  background-color: var(--main-color);
+  transition: all 0.4s;
+}
+.sing-up:hover {
+  color: #000;
+  background-color:#2a9c2e;
+}
+label {
+  display: none;
+}
+  #check {
+    display: none;
+  }
+
+  @media (max-width: 991px){
+    .container {
+      overflow: hidden;
+    }
+    nav ul {
+      display: none;
+    }
+    label {
+      margin-right: 100px;
+      cursor: pointer;
+      font-size: 25px;
+      display: block;
+      
+    }
+    label .fa-xmark {
+      display: none;
+    }
+    #check:checked ~ ul {
+      display: flex;
+      position: fixed;
+      background-color: #717171;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    #check:checked ~ ul a {
+      color: var(--bg-alt);
+      font-size: 22px;
+
+    }
+    #check:checked ~ label .fa-xmark {
+      z-index: 2;
+      position: fixed;
+      top: 45px;
+      right: 55px;
+      display: block;
+    } 
+  }
+  .home {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin-left: 100px;
+    margin-top: 100px;
+  }
+  .dek h1 {
+    font-size: var(--h1-size);
+    color: var(--bg);
+    margin-top: 100px;
+  }
+  .dek span {
+    color: var(--main-color);
+  }
+  .dek p {
+    width: 100%;
+    color: var(--text-color);
+    margin-top: 20px;
+    margin-left: 10%;
+  }
+  .our-clients {
+    text-align: center;
+    line-height: 30px;
+    line-height: 40px;
+  }
+  .our-clients h2 {
+    font-size: var(--h2-size);
+    color: var(--title-color);
+  }
+  .our-clients p {
+  color: var(--text-color);
+  }
+  .icon {
+    display: flex;
+    padding: 0 70px;
+    justify-content: space-around;
+  }
+  .our-clients img {
+    margin-top: 50px;
+  }
+  .faeture {
+    margin-top: 100px;
+  }
