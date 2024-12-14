@@ -251,3 +251,58 @@ label {
     flex-wrap: wrap
     
   }
+  .footer {
+    color: var(--bg-alt);
+    background-color: var(--bg);
+  }
+  .footer .log  {
+    position: relative;
+    top: 100px;
+    left: 5%;
+    width: 20%;
+  }
+  .footer p  {
+    position: relative;
+    left: 5%;
+    top: 120px;
+    line-height: 30px;
+    width: 20%;
+  }
+  .footer .About {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  line-height: 30px;
+
+  }
+  .footer .Company {
+    margin-right: 150px;
+  }
+  .footer span {
+    font-size: 25px;
+  }
+  .footer ,input {
+    padding: 0 70px 0 0;
+    position: relative;
+    text-align: end;
+    
+  }
+  .email-input {
+    width: 300px;
+    padding: 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.email-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.email-input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
